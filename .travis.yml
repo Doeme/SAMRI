@@ -3,4 +3,4 @@ language: generic
 sudo: required
 script:
   - 'if [ "${TRAVIS_EVENT_TYPE}" != "cron" ]; then
-    docker run --rm -ti -v "${HOME}"/.portage-pkgdir:/usr/portage/packages -v "${PWD}":${HOME}/SAMRI -w ${HOME}/SAMRI buffepva/gentoo ${HOME}/SAMRI/.gentoo/on_travis.sh; fi'
+    docker run --rm -ti -v "${HOME}"/.portage-pkgdir:/usr/portage/packages -v "${PWD}":${HOME}/SAMRI -w ${HOME}/SAMRI buffepva/gentoo:1508143449 ${HOME}/SAMRI/.gentoo/on_travis.sh; fi'
